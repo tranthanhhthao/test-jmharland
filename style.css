@@ -1,0 +1,57 @@
+section {
+    margin-top: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+.agents-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    flex-wrap: wrap;
+}
+
+.one-agent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.one-agent img {
+    position: relative;
+    width: 80px;
+    height: 100px;
+    display: inline-block;
+    transition: 0.3s ease;
+    object-fit: cover;
+}
+
+.one-agent p {
+    position: absolute;
+    text-align: center;
+    color: white;
+    background-color: black;
+    bottom: -10px;
+    display: none;
+}
+
+.one-agent:hover {
+    transform: scale(2);
+    z-index: 3;
+}
+
+.one-agent:hover p {
+    font-size: 0.8rem;
+    z-index: 3;
+    display: block;
+}
+
